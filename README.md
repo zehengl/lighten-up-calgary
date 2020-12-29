@@ -22,6 +22,8 @@ Create a virtual environment.
 
 Then install dependencies.
 
+    pip install -r .\requirements.txt
+
 > Use `pip install -r requirements-dev.txt` for development.
 > It will install `pylint`, `black`, and `jupyter` to enable linting, auto-formatting, and notebook experience.
 
@@ -38,14 +40,12 @@ Create a `.env` file to store your GCP API key and MapQuest API key.
 
 ### Crawling address data from [Lighten UP Calgary][1] for year 2020
 
-    pip install -r .\requirements-crawl.txt
     python .\crawl.py 2020
 
 Address data will be saved in `2020.json` located at the `data` folder. Addresses come with latitude/longitude and are formatted.
 
 ### Visualizing address data
 
-    pip install -r .\requirements-display.txt
     python .\display.py
 
 Interactive html files `display.html` and `route.html` will be saved at the `output` folder.
@@ -62,7 +62,6 @@ Interactive html files `display.html` and `route.html` will be saved at the `out
 
 ### Demo Webapp
 
-    pip install -r .\requirements.txt
     python .\app.py
 
 <hr>
