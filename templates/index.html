@@ -42,7 +42,7 @@
         <p>Your starting location: <strong>{{ result["address"] }}</strong></p>
       {% endif %}
       {% if result["time"]  %}
-        <p>Esimated round trip time: <strong>{{ result["time"] }}</strong></p>
+        <p>Estimated round trip time: <strong>{{ result["time"] }}</strong></p>
       {% endif %}
       {{ result["map"] | safe }}
       {% if result["stops"]  %}
