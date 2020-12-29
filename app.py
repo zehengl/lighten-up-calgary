@@ -8,6 +8,7 @@ from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from whitenoise import WhiteNoise
 
+from display import show_all, get_route
 from forms import AddressForm
 from lighten_up_calgary_2020 import LightenUpCalgary2020
 from settings import mapquest_key
@@ -30,15 +31,7 @@ def index():
     quadrant = form.quadrant.data
 
     if not address:
-        m = folium.Map(location=yyc)
-        for row in df[["lat", "lng", "address"]].to_dict("records"):
-            custom_icon = folium.CustomIcon("./static/favicon.png", icon_size=(24, 24))
-            folium.Marker(
-                location=(row["lat"], row["lng"]),
-                icon=custom_icon,
-                tooltip=row["address"],
-            ).add_to(m)
-
+        m = show_all(yyc, df)
         start_location = None
         round_trip_time = None
         stops = None
@@ -46,45 +39,8 @@ def index():
     else:
         lat, lng, start_location = LightenUpCalgary2020.get_geocode(address)
         choices = df[df["quadrant"].isin(quadrant)].sample(number_of_locations)
-
-        url = "http://www.mapquestapi.com/directions/v2/optimizedroute"
-        params = {"key": mapquest_key}
-        locations = [start_location] + choices["address"].to_list() + [start_location]
-        resp = requests.post(
-            url,
-            params=params,
-            data=json.dumps({"locations": locations}),
-        ).json()
-
-        round_trip_time = resp["route"]["formattedTime"]
-
-        # %%
-        ind = [int(j - 1) for j in resp["route"]["locationSequence"]][1:-1]
-        ordered_stops = choices.reset_index().loc[ind]
-        stops = ordered_stops["address"].to_list()
-
-        m = folium.Map(location=yyc)
-
-        lat, lng, _ = LightenUpCalgary2020.get_geocode(start_location)
+        m, round_trip_time, stops = get_route(yyc, choices, start_location)
         folium.Marker(location=(lat, lng), tooltip="Home").add_to(m)
-
-        leg_number = 1
-        for row in ordered_stops[["lat", "lng", "address"]].to_dict("records"):
-            html = f"""
-            <div style="font-size: 10pt; color: black; ">
-                <strong>#{leg_number}</strong>
-            </div>
-            """
-            folium.Marker(
-                location=(row["lat"], row["lng"]),
-                icon=folium.DivIcon(html=html),
-                tooltip=row["address"],
-            ).add_to(m)
-            folium.CircleMarker(
-                location=(row["lat"], row["lng"]),
-                radius=12,
-            ).add_to(m)
-            leg_number += 1
 
     result = {
         "map": m._repr_html_(),
