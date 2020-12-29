@@ -1,4 +1,5 @@
 -r requirements-display.txt
+-r requirements-crawl.txt
 Flask==1.1.2
 Flask-Bootstrap4==4.0.2
 Flask-WTF==0.14.3
