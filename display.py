@@ -20,9 +20,7 @@ df = pd.read_json("data/2020.json")
 # %%
 m = folium.Map(location=yyc)
 for row in df[["lat", "lng", "address"]].to_dict("records"):
-    custom_icon = folium.CustomIcon(
-        "./images/iconfinder_Santa_Claus_1651938.png", icon_size=(24, 24)
-    )
+    custom_icon = folium.CustomIcon("./static/favicon.png", icon_size=(24, 24))
     folium.Marker(
         location=(row["lat"], row["lng"]),
         icon=custom_icon,
