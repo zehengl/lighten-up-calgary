@@ -1,9 +1,7 @@
-import json
 import os
 
 import folium
 import pandas as pd
-import requests
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from whitenoise import WhiteNoise
@@ -11,7 +9,6 @@ from whitenoise import WhiteNoise
 from display import show_all, get_route
 from forms import AddressForm
 from lighten_up_calgary_2020 import LightenUpCalgary2020
-from settings import mapquest_key
 
 app = Flask(__name__)
 Bootstrap(app)
