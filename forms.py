@@ -6,14 +6,14 @@ from wtforms.widgets import html5 as h5widgets
 
 
 class AddressForm(FlaskForm):
-    address = TextField("Address", validators=[DataRequired()])
+    address = TextField("Where are you now?", validators=[DataRequired()])
     number_of_locations = h5fields.IntegerField(
-        "Number of Locations",
+        "How many locations would you like to visit?",
         widget=h5widgets.NumberInput(min=2, max=20, step=1),
         validators=[DataRequired()],
     )
     quadrant = SelectMultipleField(
-        f"Quadrant",
+        f"What quadrants are you interested in?",
         choices=[
             (v, v)
             for v in [
