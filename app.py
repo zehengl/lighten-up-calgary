@@ -1,6 +1,5 @@
 import os
 
-import folium
 import pandas as pd
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
@@ -8,7 +7,6 @@ from whitenoise import WhiteNoise
 
 from display import show_all, get_route
 from forms import AddressForm
-from lighten_up_calgary_2020 import LightenUpCalgary2020
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -28,16 +26,11 @@ def index():
     quadrant = form.quadrant.data
 
     if not address:
-        m = show_all(yyc, df)
-        start_location = None
-        round_trip_time = None
-        stops = None
+        m, round_trip_time, stops, start_location = show_all(yyc, df), None, None, None
 
     else:
-        lat, lng, start_location = LightenUpCalgary2020.get_geocode(address)
         choices = df[df["quadrant"].isin(quadrant)].sample(number_of_locations)
-        m, round_trip_time, stops = get_route(yyc, choices, start_location)
-        folium.Marker(location=(lat, lng), tooltip="Home").add_to(m)
+        m, round_trip_time, stops, start_location = get_route(yyc, choices, address)
 
     result = {
         "map": m._repr_html_(),

@@ -22,7 +22,9 @@ def show_all(base, df):
     return m
 
 
-def get_route(base, choices, start_location):
+def get_route(base, choices, address):
+    lat, lng, start_location = LightenUpCalgary2020.get_geocode(address)
+
     url = "http://www.mapquestapi.com/directions/v2/optimizedroute"
     params = {"key": mapquest_key}
     locations = [start_location] + choices["address"].to_list() + [start_location]
@@ -38,7 +40,6 @@ def get_route(base, choices, start_location):
     ordered_stops = choices.reset_index().loc[ind]
     m = folium.Map(location=base)
 
-    lat, lng, _ = LightenUpCalgary2020.get_geocode(start_location)
     folium.Marker(location=(lat, lng), tooltip="Home").add_to(m)
 
     leg_number = 1
@@ -59,7 +60,7 @@ def get_route(base, choices, start_location):
         ).add_to(m)
         leg_number += 1
 
-    return m, round_trip_time, ordered_stops["address"].to_list()
+    return m, round_trip_time, ordered_stops["address"].to_list(), start_location
 
 
 # %%
@@ -74,9 +75,9 @@ if __name__ == "__main__":
     m.save(str(output / "display.html"))
 
     choices = df.sample(20)
-    start_location = "800 Macleod Trail SE, Calgary, AB T2P 2M5"
+    address = "800 Macleod Trail SE, Calgary, AB T2P 2M5"
 
-    m, round_trip_time, stops = get_route(yyc, choices, start_location)
+    m, round_trip_time, stops, _ = get_route(yyc, choices, address)
     print(f"Estimated time: {round_trip_time}")
     print("Order of stops:")
     for ind, address in enumerate(stops):
