@@ -42,23 +42,16 @@ def get_route(base, choices, address):
 
     folium.Marker(location=(lat, lng), tooltip="Home").add_to(m)
 
-    leg_number = 1
-    for row in ordered_stops[["lat", "lng", "address"]].to_dict("records"):
-        html = f"""
-        <div style="font-size: 10pt; color: black; ">
-            <strong>#{leg_number}</strong>
-        </div>
-        """
+    rows = ordered_stops[["lat", "lng", "address"]].to_dict("records")
+    for ind, row in enumerate(rows):
+        custom_icon = folium.CustomIcon(
+            f"./static/numbers/{ind+1}.png", icon_size=(32, 32)
+        )
         folium.Marker(
             location=(row["lat"], row["lng"]),
-            icon=folium.DivIcon(html=html),
+            icon=custom_icon,
             tooltip=row["address"],
         ).add_to(m)
-        folium.CircleMarker(
-            location=(row["lat"], row["lng"]),
-            radius=12,
-        ).add_to(m)
-        leg_number += 1
 
     return m, round_trip_time, ordered_stops["address"].to_list(), start_location
 
