@@ -8,6 +8,8 @@
 
 A playground for YYC Christmas light displays
 
+The demo can be found at https://lighten-up-calgary.herokuapp.com/
+
 ## Environment
 
 - Python 3.7
