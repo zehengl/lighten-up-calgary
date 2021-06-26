@@ -66,17 +66,11 @@ Interactive html files `display.html` and `route.html` will be saved at the `out
 
     python .\app.py
 
-<hr>
-
-<sup>
-
 ## Credits
 
 - [Lighten UP Calgary][1]
 
 - [Santa Claus Icon][2] by [Alpár-Etele Méder][3]
-
-</sup>
 
 [1]: https://lightenupcalgary.ca/
 [2]: https://www.iconfinder.com/icons/1651938/christmas_claus_santa_icon
