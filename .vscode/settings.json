@@ -12,5 +12,7 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Oceanic Next (dimmed bg)",
   "workbench.productIconTheme": "material-product-icons",
-  "python.pythonPath": "venv\\Scripts\\python.exe"
+  "python.pythonPath": "venv\\Scripts\\python.exe",
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false
 }
