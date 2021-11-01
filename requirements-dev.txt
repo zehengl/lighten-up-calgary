@@ -1,5 +1,5 @@
 -r requirements.txt
-black==21.9b0
+black==21.10b0
 jupyterlab==3.2.1
 pip-check-updates==0.6.0
 pylint==2.11.1
