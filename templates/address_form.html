@@ -1,9 +1,18 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
-<form style="margin-bottom: 1rem" class="form form-horizontal" method="post" role="form">
+<form
+  style="margin-bottom: 1rem"
+  class="form form-horizontal"
+  method="post"
+  role="form"
+>
+  <!-- address -->
   {{ wtf.form_field(form.address, class="form-control") }}
+  <!-- number_of_locations -->
   {{ wtf.form_field(form.number_of_locations, class="form-control") }}
+  <!-- quadrant -->
   {{ wtf.form_field(form.quadrant, class="form-control", size=5) }}
+  <!-- submit -->
   {{ wtf.form_field(form.submit, class="btn btn-primary") }}
   <a class="btn btn-secondary" href="/">Clear</a>
 </form>

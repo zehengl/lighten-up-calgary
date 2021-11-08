@@ -1,73 +1,83 @@
 {% extends "bootstrap/base.html" %}
 
+<!-- head -->
 {% block head %}
-  {{ super() }}
-  <link
-    rel="shortcut icon"
-    href="{{ url_for('static', filename='favicon.png') }}"
-  />
+<!-- super() -->
+{{ super() }}
+<link
+  rel="shortcut icon"
+  href="{{ url_for('static', filename='favicon.png') }}"
+/>
 {% endblock %}
 
+<!-- title -->
 {% block title %} lighten-up-calgary {% endblock %}
 
+<!-- content -->
 {% block content %}
-  <div style="display: flex; min-height:100vh; flex-direction:column; flex: 1">
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">
-          <span>
-            <img
-              src="{{ url_for('static', filename='favicon.png') }}"
-              width="64"
-              height="64"
-            />
-          </span>
+<div style="display: flex; min-height: 100vh; flex-direction: column; flex: 1">
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">
+        <span>
+          <img
+            src="{{ url_for('static', filename='favicon.png') }}"
+            width="64"
+            height="64"
+          />
+        </span>
+        lighten-up-calgary
+      </h1>
+      <p class="lead">A playground for YYC Christmas light displays</p>
+      <hr class="my-4" />
+      <p>
+        Check out the source code at
+        <a href="https://github.com/zehengl/lighten-up-calgary">
           lighten-up-calgary
-        </h1>
-        <p class="lead">
-          A playground for YYC Christmas light displays
-        </p>
-        <hr class="my-4" />
-        <p>
-          Check out the source code at
-          <a href="https://github.com/zehengl/lighten-up-calgary">lighten-up-calgary</a>
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      {% include 'address_form.html' %}
-      {% if result["address"]  %}
-        <p>Your starting location: <strong>{{ result["address"] }}</strong></p>
-      {% endif %}
-      {% if result["time"]  %}
-        <p>Estimated round trip time: <strong>{{ result["time"] }}</strong></p>
-      {% endif %}
-      {{ result["map"] | safe }}
-      {% if result["stops"]  %}
-        <table class="table table-striped table-bordered" style="margin-top: 1rem">
-          <thead>
-            <tr>
-              <th>Stop</th>
-              <th>Address</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for address in result["stops"]%}
-              <tr>
-                <td>{{ loop.index }}</td>
-                <td>{{ address }}</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      {% endif %}
+        </a>
+      </p>
     </div>
   </div>
-  <footer class="footer" style="padding: 1rem">
-    <div class="container">
-      <span class="text-muted">
-        &copy; Copyright 2020 by Zeheng Li
-      </span>
-    </div>
-  </footer>
+  <div class="container">
+    {% include 'address_form.html' %}
+
+    <!-- result["address"] -->
+    {% if result["address"] %}
+    <p>Your starting location: <strong>{{ result["address"] }}</strong></p>
+    {% endif %}
+
+    <!-- result["time"] -->
+    {% if result["time"] %}
+    <p>Estimated round trip time: <strong>{{ result["time"] }}</strong></p>
+    {% endif %}
+
+    <!-- result["map"] -->
+    {{ result["map"] | safe }}
+
+    <!-- result["stops"] -->
+    {% if result["stops"] %}
+    <table class="table table-striped table-bordered" style="margin-top: 1rem">
+      <thead>
+        <tr>
+          <th>Stop</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for address in result["stops"]%}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>{{ address }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  </div>
+</div>
+<footer class="footer" style="padding: 1rem">
+  <div class="container">
+    <span class="text-muted"> &copy; Copyright 2020 by Zeheng Li </span>
+  </div>
+</footer>
 {% endblock %}
