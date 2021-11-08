@@ -1,7 +1,8 @@
 import os
+from flask.helpers import url_for
 
 import pandas as pd
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from flask_bootstrap import Bootstrap
 from whitenoise import WhiteNoise
 
@@ -29,8 +30,11 @@ def index():
         m, round_trip_time, stops, start_location = show_all(yyc, df), None, None, None
 
     else:
-        choices = df[df["quadrant"].isin(quadrant)].sample(number_of_locations)
-        m, round_trip_time, stops, start_location = get_route(yyc, choices, address)
+        try:
+            choices = df[df["quadrant"].isin(quadrant)].sample(number_of_locations)
+            m, round_trip_time, stops, start_location = get_route(yyc, choices, address)
+        except:
+            return redirect(url_for("index"))
 
     result = {
         "map": m._repr_html_(),
