@@ -1,15 +1,15 @@
 from flask_wtf import FlaskForm
-from wtforms import SubmitField, TextField, SelectMultipleField
+from wtforms import SubmitField, StringField, SelectMultipleField
 from wtforms.validators import DataRequired
-from wtforms.fields import html5 as h5fields
-from wtforms.widgets import html5 as h5widgets
+from wtforms.fields import IntegerField
+from wtforms.widgets import NumberInput
 
 
 class AddressForm(FlaskForm):
-    address = TextField("Where are you now?", validators=[DataRequired()])
-    number_of_locations = h5fields.IntegerField(
+    address = StringField("Where are you now?", validators=[DataRequired()])
+    number_of_locations = IntegerField(
         "How many locations would you like to visit?",
-        widget=h5widgets.NumberInput(min=2, max=20, step=1),
+        widget=NumberInput(min=2, max=20, step=1),
         validators=[DataRequired()],
     )
     quadrant = SelectMultipleField(
