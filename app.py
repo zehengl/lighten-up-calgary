@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from glob import glob
 
 import pandas as pd
@@ -18,6 +19,11 @@ app.config["BOOTSTRAP_SERVE_LOCAL"] = True
 
 yyc = (51.0447, -114.0719)
 df = pd.read_json(sorted(glob("data/*.json"))[-1])
+
+
+@app.context_processor
+def now():
+    return {"now": datetime.utcnow()}
 
 
 @app.route("/", methods=["get", "post"])
