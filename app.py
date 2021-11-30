@@ -1,12 +1,13 @@
 import os
-from flask.helpers import url_for
+from glob import glob
 
 import pandas as pd
-from flask import Flask, render_template, request, redirect
+from flask import Flask, redirect, render_template, request
+from flask.helpers import url_for
 from flask_bootstrap import Bootstrap
 from whitenoise import WhiteNoise
 
-from display import show_all, get_route
+from display import get_route, show_all
 from forms import AddressForm
 
 app = Flask(__name__)
@@ -16,7 +17,7 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "SECRET_KEY")
 app.config["BOOTSTRAP_SERVE_LOCAL"] = True
 
 yyc = (51.0447, -114.0719)
-df = pd.read_json("data/2020.json")
+df = pd.read_json(sorted(glob("data/*.json"))[-1])
 
 
 @app.route("/", methods=["get", "post"])
