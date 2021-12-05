@@ -12,6 +12,7 @@ from settings import mapquest_key
 
 def show_all(base, df):
     m = folium.Map(location=base)
+    df = df.dropna()
     for row in df[["lat", "lng", "address"]].to_dict("records"):
         custom_icon = folium.CustomIcon("./static/favicon.png", icon_size=(24, 24))
         folium.Marker(
