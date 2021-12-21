@@ -27,6 +27,8 @@ class LightenUpCalgary2020(LightenUpCalgary):
                 inner_text = div.find("div", class_="et_pb_text_inner")
                 address = inner_text.find_all("p")[-1].text.replace("\xa0", "")
                 lat, lng, address = LightenUpCalgary2020.get_geocode(address)
+                if not lat or not lng or not address:
+                    continue
                 record = dict(
                     address=address,
                     quadrant=location,
