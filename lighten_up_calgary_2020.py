@@ -26,7 +26,9 @@ class LightenUpCalgary2020(LightenUpCalgary):
             for div in tqdm(divs[:-1], desc=f"{location}"):
                 inner_text = div.find("div", class_="et_pb_text_inner")
                 address = inner_text.find_all("p")[-1].text.replace("\xa0", "")
-                lat, lng, address = LightenUpCalgary2020.get_geocode(address)
+                lat, lng, address = LightenUpCalgary2020.get_geocode(
+                    f"{address}, Calgary"
+                )
                 if not lat or not lng or not address:
                     continue
                 record = dict(
