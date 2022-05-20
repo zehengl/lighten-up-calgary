@@ -19,8 +19,8 @@ The demo can be found at https://lighten-up-calgary.herokuapp.com/
 
 Create a virtual environment.
 
-    python -m venv venv
-    .\venv\Scripts\activate
+    python -m venv .venv
+    .\.venv\Scripts\activate
 
 Then install dependencies.
 
