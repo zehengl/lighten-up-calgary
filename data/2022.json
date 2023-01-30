@@ -1,0 +1,506 @@
+[
+  {
+    "address": "111 Arbour Stone Crescent NW, Calgary, AB T3G 5A1, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.1356602,
+    "lng": -114.217308,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "7 Hidden Ranch Crescent NW, Calgary, AB T3A 5W5, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.150792,
+    "lng": -114.1188612,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "222 Evansmeade Point NW, Calgary, AB T3P 1C4, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.1616897,
+    "lng": -114.1131577,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "120 Macewan Ridge Close NW, Calgary, AB T3K 3J4, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.14230500000001,
+    "lng": -114.1138617,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "107 Panora Square NW, Calgary, AB T3P 1E5, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.16884,
+    "lng": -114.09357,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "33 Connaught Dr NW, Calgary, AB T2K 1V9, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.0847883,
+    "lng": -114.0930977,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "34 Evanscrest Common, Calgary, AB T3P 0R7, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.1816973,
+    "lng": -114.1042679,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "4348 70 St NW, Calgary, AB T3B 2K5, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.09110949999999,
+    "lng": -114.1920638,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "6 Evansfield Rd NW, Calgary, AB T3P 0B1, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.179115,
+    "lng": -114.1146938,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "515 Trafford Dr NW, Calgary, AB T2K 2T2, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.0988978,
+    "lng": -114.0725425,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "3505 Centre B St NW, Calgary, AB T2K 0V9, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.0834878,
+    "lng": -114.0641149,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "4515 Brisebois Dr NW, Calgary, AB T2L 2G3, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.09386259999999,
+    "lng": -114.1284314,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "266 Dalhurst Way NW, Calgary, AB T3A 1P5, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.1109754,
+    "lng": -114.1547007,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "1516 20a St NW, Calgary, AB T2N 2L5, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.0657243,
+    "lng": -114.108992,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "160 Capilano Crescent NW, Calgary, AB T2L 0Z9, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.09105,
+    "lng": -114.1099909,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "112 Hidden Hills Pl NW, Calgary, AB T3A 6E2, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.150478,
+    "lng": -114.1306828,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "661 Hawkside Mews NW, Calgary, AB T3G 3S1, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.1257417,
+    "lng": -114.1858489,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "115 Nottingham Rd NW, Calgary, AB T2K 5L8, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.1064533,
+    "lng": -114.0839136,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "12 Evansford Rd NW, Calgary, AB T3P 1E9, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.16729609999999,
+    "lng": -114.111066,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "43 Hawkmount Heights NW, Calgary, AB T3G 3S5, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.1334937,
+    "lng": -114.1759209,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "6368 32 Ave NW, Calgary, AB T3B 0K2, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.08174229999999,
+    "lng": -114.1795421,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "1305 Northmount Dr NW, Calgary, AB T2L 0C9, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.0920617,
+    "lng": -114.1272358,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "4816 Voyageur Dr NW, Calgary, AB T3A 0P6, Canada",
+    "quadrant": "calgary-nw",
+    "lat": 51.0953652,
+    "lng": -114.1523791,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "63 Ventura Way NE, Calgary, AB T2E 8E8, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0717288,
+    "lng": -114.0118853,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "252 San Fernando Pl NE, Calgary, AB T1Y 7J1, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0898568,
+    "lng": -113.9249082,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "144 Whiteview Close NE, Calgary, AB T1Y 1R2, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0832285,
+    "lng": -113.9684375,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "1112 Child Ave NE, Calgary, AB T2E 5C5, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.05902769999999,
+    "lng": -114.0358066,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "107 Huntcroft Pl NE, Calgary, AB T2K 4E6, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.12153430000001,
+    "lng": -114.068623,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "217 San Fernando Pl NE, Calgary, AB T1Y 7J1, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0900168,
+    "lng": -113.9261646,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "3248 56 St NE, Calgary, AB T1Y 2E9, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0812754,
+    "lng": -113.9526916,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "5763 Maidstone Crescent NE, Calgary, AB T2A 4C3, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0588661,
+    "lng": -113.9493882,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "1071 Abbeydale Dr NE, Calgary, AB T2A 6H4, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0567703,
+    "lng": -113.9283201,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "121 Laguna Close NE, Calgary, AB T1Y 6V1, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.0822586,
+    "lng": -113.9296211,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "475 Huntbourne Hill NE, Calgary, AB T2K 5G8, Canada",
+    "quadrant": "calgary-ne",
+    "lat": 51.11609499999999,
+    "lng": -114.0560585,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "85 Glacier Dr SW, Calgary, AB T3E 5A3, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 51.0099931,
+    "lng": -114.1469962,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "6016 Lakeview Dr SW, Calgary, AB T3E 5S8, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 51.00033029999999,
+    "lng": -114.1327186,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "2636 28 St SW, Calgary, AB T3E 2J1, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 51.0303323,
+    "lng": -114.1278262,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "192 Bridleridge Gardens SW, Calgary, AB T2Y 4L4, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 50.89718629999999,
+    "lng": -114.1103155,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "2128 54 Ave SW, Calgary, AB T3E 1L7, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 51.0051896,
+    "lng": -114.1107198,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "6739 Legare Dr SW, Calgary, AB T3E 6H3, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 50.9928891,
+    "lng": -114.1266978,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "385 Cantrell Dr SW, Calgary, AB T2W 2T2, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 50.9342872,
+    "lng": -114.071146,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "111 Bridlewood Close SW, Calgary, AB T2Y 3N3, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 50.9055911,
+    "lng": -114.1032787,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "55 Westridge Crescent SW, Calgary, AB T3H 5C9, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 51.0582535,
+    "lng": -114.1966759,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "14 Somercrest Close SW, Calgary, AB T2Y 3H7, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 50.9016627,
+    "lng": -114.0815855,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "98 Crestmont Dr SW, Calgary, AB T3B 5Z6, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 51.0833144,
+    "lng": -114.263463,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "44 Strathcona Rd SW, Calgary, AB T3H 1V5, Canada",
+    "quadrant": "calgary-sw",
+    "lat": 51.0474414,
+    "lng": -114.1780388,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "15003 Deer Run Dr SE, Calgary, AB T2J 5M6, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9177937,
+    "lng": -114.0048671,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "765 Applewood Dr SE, Calgary, AB T2A 7T7, Canada",
+    "quadrant": "calgary-se",
+    "lat": 51.0478953,
+    "lng": -113.9259659,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "308 Cramond Close SE, Calgary, AB T3M 1B9, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.894357,
+    "lng": -113.9798316,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "127 Erin Park Close SE, Calgary, AB T2B 2V6, Canada",
+    "quadrant": "calgary-se",
+    "lat": 51.0207349,
+    "lng": -113.9704742,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "113 Chapalina Close SE, Calgary, AB T2X 0A7, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.88131569999999,
+    "lng": -114.0457647,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "16 Mckerrell Close SE, Calgary, AB T2Z 1M7, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9019005,
+    "lng": -113.9821803,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "72 Deer Ridge Way SE, Calgary, AB T2J 5Y6, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9279036,
+    "lng": -114.0237197,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "73 Inverness Ln SE, Calgary, AB T2Z 2Y4, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9120797,
+    "lng": -113.9694505,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "253 Copperpond Landing, Calgary, AB T2Z 1G6, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9250409,
+    "lng": -113.9305251,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "87 Auburn Glen Way SE, Calgary, AB T3M 0K9, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.8963,
+    "lng": -113.9575044,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "184 Chaparral Cir SE, Calgary, AB T2X 3M2, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.8887564,
+    "lng": -114.046659,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "188 Chaparral Cir SE, Calgary, AB T2X 3M2, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.8886358,
+    "lng": -114.0466184,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "2812 46 St SE, Calgary, AB T2B 2N8, Canada",
+    "quadrant": "calgary-se",
+    "lat": 51.029485,
+    "lng": -113.966613,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "34 Brightoncrest Heights SE, Calgary, AB T2Z 0X4, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9221388,
+    "lng": -113.9446722,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "36 Auburn Meadows Green SE, Calgary, AB T3M 0T5, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.89731519999999,
+    "lng": -113.9448953,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "220 Douglasbank Pl SE, Calgary, AB T2Z 2C2, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9442479,
+    "lng": -114.0086941,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "14115 Deer Ridge Dr SE, Calgary, AB T2J 5V9, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9271904,
+    "lng": -114.0152878,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "127 Elgin Terrace, Calgary, AB T2Z 0H6, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.90568709999999,
+    "lng": -113.9601769,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "341 McKenzie Towne Dr SE, Calgary, AB T2Z 0B7, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9069845,
+    "lng": -113.961713,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "427 Parkvalley Dr SE, Calgary, AB T2J 4V3, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9153148,
+    "lng": -114.0285386,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "133 Midridge Pl SE, Calgary, AB T2X 1E4, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9208285,
+    "lng": -114.0588759,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "3210 Dover Rd SE, Calgary, AB T2B 1V6, Canada",
+    "quadrant": "calgary-se",
+    "lat": 51.0263285,
+    "lng": -113.9725711,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "928 Lake Ontario Dr SE, Calgary, AB T2J 3K2, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.93094319999999,
+    "lng": -114.0368712,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "2720 16a St SE, Calgary, AB T2G 3T2, Canada",
+    "quadrant": "calgary-se",
+    "lat": 51.0298238,
+    "lng": -114.0202826,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "73 Riverglen Close SE, Calgary, AB T2C 3W4, Canada",
+    "quadrant": "calgary-se",
+    "lat": 50.9753724,
+    "lng": -114.0092504,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  },
+  {
+    "address": "317 W Creek Blvd, Chestermere, AB T1X 0A6, Canada",
+    "quadrant": "surroundings",
+    "lat": 51.0285725,
+    "lng": -113.8350363,
+    "last_updated": "2023-01-30T11:01:23.703191"
+  }
+]
