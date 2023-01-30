@@ -2,13 +2,11 @@
     <img src="https://cdn4.iconfinder.com/data/icons/free-color-christmas-icons/24/Santa_Claus-512.png" alt="logo" height="128">
 </div>
 
-# yyc-lighten-up
+# lighten-up-calgary
 
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 A playground for YYC Christmas light displays
-
-The demo can be found at https://lighten-up-calgary.herokuapp.com/
 
 ## Environment
 
