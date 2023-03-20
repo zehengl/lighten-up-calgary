@@ -1,4 +1,4 @@
-beautifulsoup4==4.11.2
+beautifulsoup4==4.12.0
 Flask-Bootstrap4==4.0.2
 Flask-WTF==1.1.1
 Flask==2.2.3
