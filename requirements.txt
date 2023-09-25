@@ -4,7 +4,7 @@ Flask-WTF==1.1.1
 Flask==2.3.3
 folium==0.14.0
 gunicorn==21.2.0
-pandas==2.1.0
+pandas==2.1.1
 python-dotenv==1.0.0
 requests==2.31.0
 tqdm==4.66.1
