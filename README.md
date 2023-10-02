@@ -25,7 +25,6 @@ Then install dependencies.
     pip install -r .\requirements.txt
 
 > Use `pip install -r requirements-dev.txt` for development.
-> It will install `pylint`, `black`, and `jupyterlab` to enable linting, auto-formatting, and notebook experience.
 
 ## Usage
 
