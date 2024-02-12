@@ -7,5 +7,5 @@ gunicorn==21.2.0
 pandas==2.2.0
 python-dotenv==1.0.1
 requests==2.31.0
-tqdm==4.66.1
+tqdm==4.66.2
 whitenoise==6.6.0
