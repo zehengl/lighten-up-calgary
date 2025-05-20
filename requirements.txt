@@ -2,7 +2,7 @@ beautifulsoup4==4.13.4
 Flask-Bootstrap4==4.0.2
 Flask-WTF==1.2.2
 Flask==3.1.1
-folium==0.19.5
+folium==0.19.6
 gunicorn==23.0.0
 pandas==2.2.3
 python-dotenv==1.1.0
