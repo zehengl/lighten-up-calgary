@@ -6,6 +6,6 @@ folium==0.19.7
 gunicorn==23.0.0
 pandas==2.3.0
 python-dotenv==1.1.0
-requests==2.32.3
+requests==2.32.4
 tqdm==4.67.1
 whitenoise==6.9.0
