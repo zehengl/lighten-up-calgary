@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from glob import glob
 
 import pandas as pd
@@ -23,7 +23,7 @@ df = pd.read_json(sorted(glob("data/*.json"))[-1])
 
 @app.context_processor
 def now():
-    return {"now": datetime.utcnow()}
+    return {"now": datetime.now(timezone.utc)}
 
 
 @app.route("/", methods=["get", "post"])

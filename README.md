@@ -6,7 +6,7 @@ A playground for YYC Christmas light displays
 
 ## Environment
 
-- Python 3.9
+- Python 3.14
 - Windows 10
 
 ## Install
