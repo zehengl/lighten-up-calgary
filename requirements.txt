@@ -7,7 +7,7 @@ gunicorn==27.0.1
 pandas==3.1.1
 python-dotenv==1.2.4
 requests==2.34.2
-seleniumbase==4.58.1
+seleniumbase==4.58.3
 tqdm==4.70.1
 usaddress==0.5.16
 whitenoise==6.12.0
